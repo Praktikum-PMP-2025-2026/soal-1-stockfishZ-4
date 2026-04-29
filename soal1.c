@@ -77,7 +77,6 @@ void SeeandStore(Node* head, int N, char order[], int start_idx){
                 segini++;
                 ktemp++;
             }else{
-                printf("%c\n", stemp[segini-2]);
                 stemp[segini] = '\0';
                 current->nilai = atoi(stemp);
                 strcpy(stemp, netral);
@@ -120,6 +119,6 @@ int main(){
 
     getN(order, &N, &start_idx);
     SeeandStore(head, N, order, start_idx);
-    //sort(head);
+    sort(head);
     printAll(head);
 }
