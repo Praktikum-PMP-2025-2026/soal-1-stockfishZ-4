@@ -119,6 +119,6 @@ int main(){
 
     getN(order, &N, &start_idx);
     SeeandStore(head, N, order, start_idx);
-    sort(head);
+    //sort(head);
     printAll(head);
 }
